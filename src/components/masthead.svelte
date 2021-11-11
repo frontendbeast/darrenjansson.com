@@ -10,7 +10,6 @@
 <script>
   import { onMount } from 'svelte';
   import VanillaTilt from 'vanilla-tilt';
-;
 
   onMount(() => {
     VanillaTilt.init(document.querySelector("[data-tilt]"));
@@ -18,18 +17,6 @@
 </script>
 
 <style lang="scss">
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
-
   .c-logo {
     margin: 0 0 5vh 0;
     width: clamp(16.25rem, 35vw, 26.25rem);
@@ -42,7 +29,7 @@
 
   .c-masthead {
     align-items: center;
-    animation: gradient 15s ease infinite;
+    animation: gradient 60s ease infinite;
     background: linear-gradient(-45deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue));
     background-size: 400% 400%;
     color: var(--color-white);

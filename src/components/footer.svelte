@@ -1,8 +1,12 @@
 <section class="c-footer">
   <div class="c-footer__inner">
-    <p>&copy; {new Date().getFullYear()} Darren Jansson | <a class="c-footer__link" href="https://github.com/frontendbeast/darrenjansson.com">View source code on GitHub</a> | <a class="c-footer__link" href="https://twitter.com/frontendbeast">Follow me on Twitter</a></p>
+    <p>&copy; {new Date().getFullYear()} Darren Jansson | <Link class="c-footer__link" href="https://github.com/frontendbeast/darrenjansson.com">View source code on GitHub</Link> | <Link class="c-footer__link" href="https://twitter.com/frontendbeast">Follow me on Twitter</Link></p>
   </div>
 </section>
+
+<script>
+  import Link from './link.svelte';
+</script>
 
 <style lang="scss">
   .c-footer {

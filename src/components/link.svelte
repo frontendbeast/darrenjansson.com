@@ -1,0 +1,50 @@
+<a class="c-link {klass || ""}" href="{href}" bind:this={link}>
+  <span class="c-link__text"><slot></slot></span>
+  <span class="c-link__effect"></span>
+</a>
+
+<script>
+	let klass, link;
+	export { klass as class };
+  export let href; 
+
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    link.querySelector('.c-link__effect').style.background = `linear-gradient(${Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue))`;
+  });
+
+</script>
+
+<style lang="scss">
+  .c-link {
+    color: var(--color-white);
+    display: inline-flex;
+    overflow: hidden;
+    padding: 0 0.33rem;
+    position: relative;
+    text-decoration: none;
+
+    &:hover .c-link__effect {
+      top: 0;
+    }
+  }
+
+    .c-link__effect {
+      animation: gradient 60s ease infinite;
+      background-size: 500% 500% !important;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: calc(100% - 2px);
+      transition: top 0.25s ease-in-out;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .c-link__text {
+      position: relative;
+      z-index: 1;
+    }
+</style>

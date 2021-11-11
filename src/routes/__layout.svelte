@@ -1,14 +1,18 @@
+<Header />
 <main>
   <slot></slot>
-  <Footer />
 </main>
+<Footer />
 
 <script>
+  import Header from '../components/header.svelte';
   import Footer from '../components/footer.svelte';
 </script>
 
 <style lang="scss">
   :root {
+    --color-black-trans: rgba(0,0,0,0.25);
+    --color-black-trans-dark: rgba(0,0,0,0.85);
     --color-grey-dark: #2f3132;
     --color-orange: #ff6633;
     --color-pink: #ff3366;
@@ -30,6 +34,19 @@
     font-style: normal;
   }
 
+
+  @keyframes -global-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
   :global(html) {
     font-size: 1rem;
 
@@ -39,11 +56,15 @@
   } 
 
   :global(body) {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-grey-dark);
     color: var(--color-white);
     font-family: var(--font-stack);
     line-height: 1.5;
     margin: 0;
     padding: 0;
+  }
+
+  :global(body.nav-open) {
+    overflow: hidden;
   }
 </style>
