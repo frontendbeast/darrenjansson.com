@@ -9,7 +9,7 @@
 
 <style lang="scss">
   :root {
-    --color-dark-grey: #2f3132;
+    --color-grey-dark: #2f3132;
     --color-orange: #ff6633;
     --color-pink: #ff3366;
     --color-purple: #6633ff;

@@ -21,7 +21,7 @@
 
 <style lang="scss">
   .c-work__article {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-grey-dark);
     clip-path: polygon(0% 5vh, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
     position: relative;
   }

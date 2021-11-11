@@ -6,12 +6,12 @@
 
 <style lang="scss">
   .c-footer {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-grey-dark);
     color: #ddd;
     position: relative;
 
     &:before {
-      background-color: var(--color-dark-grey);
+      background-color: var(--color-grey-dark);
       clip-path: polygon(0% 5vh, 100% 0%, 100% 100%, 0% 100%);
       content: '';
       display: block;

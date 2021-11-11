@@ -11,13 +11,13 @@
 
 <style lang="scss">
   .c-section {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-grey-dark);
     color: #fff;
     padding-bottom: 5vh;
     position: relative;
 
     &:before {
-      background-color: var(--color-dark-grey);
+      background-color: var(--color-grey-dark);
       clip-path: polygon(0% 5vh, 100% 0%, 100% 100%, 0% 100%);
       content: '';
       display: block;
