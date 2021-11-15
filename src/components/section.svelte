@@ -46,6 +46,15 @@
     }
   }
 
+  .c-section--orange {
+    background-color: var(--color-pink);
+    background: linear-gradient(0deg, #ee5555, var(--color-pink));
+
+    &:before {
+      background-color: var(--color-pink);
+    }
+  }
+
   .c-section--top {
     padding-top: 105px;
   }
@@ -58,6 +67,7 @@
     }
   
     .c-section__inner {
+      box-sizing: border-box;
       margin-bottom: 3.5rem;
       margin-left:  auto;
       margin-right: auto;
