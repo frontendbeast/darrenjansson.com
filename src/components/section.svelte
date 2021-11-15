@@ -1,4 +1,4 @@
-<section class="c-section c-section--{color}">
+<section class="c-section c-section--{color}{top ? ' c-section--top' : ''}">
   <div class="c-section__inner">
     <h1 class="c-section__title">{title}</h1>
     <slot></slot>
@@ -6,7 +6,7 @@
 </section>
 
 <script>
-  export let color, title
+  export let color, title, top = false;
 </script>
 
 <style lang="scss">
@@ -28,7 +28,7 @@
     } 
   }
 
-  .c-section--red {
+  .c-section--blue {
     background-color: var(--color-blue);
     background: linear-gradient(0deg, var(--color-purple), var(--color-blue));
 
@@ -37,13 +37,17 @@
     }
   }
 
-  .c-section--green {
+  .c-section--pink {
     background-color: var(--color-pink);
     background: linear-gradient(0deg, #bb4499, var(--color-pink));
 
     &:before {
       background-color: var(--color-pink);
     }
+  }
+
+  .c-section--top {
+    padding-top: 105px;
   }
 
     .c-section__title {
