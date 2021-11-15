@@ -1,4 +1,4 @@
-<a class="c-link {klass || ""}" href="{href}" bind:this={link}>
+<a class="c-link {klass || ""}" href="{href}" bind:this={link} {...$$restProps}>
   <span class="c-link__text"><slot></slot></span>
   <span class="c-link__effect"></span>
 </a>
