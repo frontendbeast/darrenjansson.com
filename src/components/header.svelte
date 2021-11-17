@@ -58,6 +58,7 @@
   }
   
     .c-header__inner {
+      box-sizing: border-box;
       display: flex;
       justify-content: space-between;
       margin-left:  auto;
