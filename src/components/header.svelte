@@ -8,7 +8,7 @@
   <nav class="c-nav">
     <ul class="c-nav__list">
       <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/about">About</Link></li>
-      <li class="c-nav__list-item"><Link class="c-nav__link" href="#">Skills</Link></li>
+      <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/skills">Skills</Link></li>
       <li class="c-nav__list-item"><Link class="c-nav__link" href="#">Work</Link></li>
       <li class="c-nav__list-item"><Link class="c-nav__link" href="#">Contact</Link></li>
     </ul>
