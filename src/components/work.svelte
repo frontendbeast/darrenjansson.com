@@ -1,50 +1,65 @@
-<article>
-  <div class="c-work__article">
-    <div class="c-work__logo-bg" style="background: url('{bgLogo}') -{pos}px 0, url('{bgLogo}') {pos + Math.round(logoWidth / 2)}px {Math.round(logoHeight / 2)}px;"></div>
-    <img src="{logo}" alt="" class="c-work__logo" width="{logoWidth * 1.5}" />
+<article class="c-work">
+  <div class="c-work__article" style="background-color: {color}">
+    <div class="c-work__logo-bg" style="background: url('{logo}') -{pos}px calc(50% - {Math.round(logoHeight / 2)}px), url('{logo}') {pos + Math.round((logoWidth + logoSpacingX) / 2)}px calc(50% - {Math.round(logoHeight / 2)}px + {Math.round((logoHeight + logoSpacingY) / 2)}px);"></div>
+    <div class="c-work__logo" style="background-image: url('{logo}'); width: {logoWidth}px; height: {logoHeight}px; background-size: {logoWidth + logoSpacingX}px;"></div>
   </div>
   <h1 class="c-work__title">{title}</h1>
+  {#if subtitle}<h2 class="c-work__subtitle">{subtitle}</h2>{/if}
   <slot></slot> 
 </article>
 
 <script>
   import { onMount } from 'svelte';
 
-  export let bgLogo, logo, logoHeight, logoWidth, title
+  export let color, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle, title
 
   let pos = 0;
 
   onMount(() => {
-    document.addEventListener('scroll', () => { pos = window.scrollY }, {passive: true});
+    document.addEventListener('scroll', () => { pos = window.scrollY, console.log(pos) }, {passive: true});
   });
 </script>
 
 <style lang="scss">
-  .c-work__article {
-    background-color: var(--color-grey-dark);
-    clip-path: polygon(0% 5vh, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
-    position: relative;
-  }
-  .c-work__logo-bg {
-    min-height: 150px;
-    height: 30vh;
-    max-height: 300px;
-    opacity: 0.1;
-    width: 100%;
-    will-change: background;
+  :global(.c-work) {
+    & + & {
+      margin-top: 5rem;
+    }
   }
 
-  .c-work__logo {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+    .c-work__article {
+      background-color: var(--color-grey-dark);
+      clip-path: polygon(0% 5vh, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
+      position: relative;
+    }
+    .c-work__logo-bg {
+      min-height: 150px;
+      height: 30vh;
+      max-height: 300px;
+      opacity: 0.1;
+      width: 100%;
+      will-change: background;
+    }
 
-  .c-work__title {
-    font-size: 2rem;
-    font-weight: var(--font-weight);
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
+    .c-work__logo {
+      background-size: 100%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    .c-work__subtitle {
+      font-size: 1rem;
+      font-weight: var(--font-weight);
+      margin-bottom: 1em;
+      margin-top: 0;
+    }
+
+    .c-work__title {
+      font-size: 2rem;
+      font-weight: var(--font-weight);
+      margin-bottom: 0;
+      margin-top: 1em;
+    }
 </style>

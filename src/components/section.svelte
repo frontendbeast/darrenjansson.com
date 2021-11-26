@@ -1,6 +1,6 @@
 <section class="c-section c-section--{color}{top ? ' c-section--top' : ''}">
   <div class="c-section__inner">
-    <h1 class="c-section__title">{title}</h1>
+    {#if title}<h1 class="c-section__title">{title}</h1>{/if}
     <slot></slot>
   </div>
 </section>
@@ -52,6 +52,15 @@
 
     &:before {
       background-color: var(--color-pink);
+    }
+  }
+
+  .c-section--black {
+    background-color: #333;
+    background: linear-gradient(0deg, #222, #333);
+
+    &:before {
+      background-color: #333;
     }
   }
 
