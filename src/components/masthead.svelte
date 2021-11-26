@@ -19,6 +19,9 @@
 <style lang="scss">
   .c-logo {
     margin: 0 0 5vh 0;
+    width: 25vw;
+    min-width: 16.25rem;
+    max-width: 26.25rem;
     width: clamp(16.25rem, 35vw, 26.25rem);
     transform: translateZ(20px);
   }

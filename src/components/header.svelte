@@ -38,8 +38,7 @@
 
 <style lang="scss">
   .c-header {
-    background-color: var(--color-black-trans);
-    backdrop-filter: blur(10px);
+    background-color: var(--color-black-trans-mid);
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
     display: flex;
     flex-direction: column;
@@ -49,6 +48,11 @@
     transition: all 0.5s ease-in-out;
     width: 100%;
     z-index: 2;
+
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+      background-color: var(--color-black-trans);
+      backdrop-filter: blur(10px);
+    }
 
     :global(.nav-open) & {
       background-color: var(--color-black-trans-dark);
@@ -70,7 +74,10 @@
 
     .c-header__link {
       display: block;
-      width: clamp(100px,25%, 140px);
+      width: 25vw;
+      min-width: 100px;
+      max-width: 140px;
+      width: clamp(100px,25vw,140px);
     }
 
   .c-nav {

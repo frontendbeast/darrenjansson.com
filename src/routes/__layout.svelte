@@ -12,6 +12,7 @@
 <style lang="scss">
   :root {
     --color-black-trans: rgba(0,0,0,0.25);
+    --color-black-trans-mid: rgba(0,0,0,0.5);
     --color-black-trans-dark: rgba(0,0,0,0.85);
     --color-grey-dark: #2f3132;
     --color-orange: #ff6633;
