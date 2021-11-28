@@ -4,14 +4,21 @@
     <div class="c-work__logo" style="background-image: url('{logo}'); width: {logoWidth}px; height: {logoHeight}px; background-size: {logoWidth + logoSpacingX}px;"></div>
   </div>
   <h1 class="c-work__title">{title}</h1>
-  {#if subtitle}<h2 class="c-work__subtitle">{subtitle}</h2>{/if}
+  {#if subtitle && link}
+  <h2 class="c-work__subtitle">
+    <Link class="c-work__link" href="{link}">{subtitle}</Link>
+  </h2>
+  {:else if subtitle}
+  <h2 class="c-work__subtitle">{subtitle}</h2>
+  {/if}
   <slot></slot> 
 </article>
 
 <script>
   import { onMount } from 'svelte';
+  import Link from '../components/link.svelte';
 
-  export let color, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle, title
+  export let color, link, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle, title
 
   let pos = 0;
 
@@ -32,6 +39,11 @@
       clip-path: polygon(0% 5vh, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
       position: relative;
     }
+
+    :global(.c-work__link) {
+      margin-left: -0.33rem;
+    }
+
     .c-work__logo-bg {
       min-height: 150px;
       height: 30vh;
