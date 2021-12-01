@@ -51,6 +51,3 @@
     return count < 10 ? numbers[count-1] : count;
   }
 </script>
-
-<style lang="scss">
-</style>

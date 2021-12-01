@@ -100,13 +100,6 @@
 </script>
 
 <style lang="scss">
-  h2 {
-    font-size: 1.5rem;
-    font-weight: var(--font-weight);
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
-
   .c-contact__error {
     color: var(--color-pink);
   }

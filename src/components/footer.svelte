@@ -33,8 +33,4 @@
       overflow: auto;
       padding: 2vh 1rem;
     }
-    
-    .c-footer__link {
-      color: #ddd;
-    }
 </style>
