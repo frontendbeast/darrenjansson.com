@@ -76,6 +76,8 @@
       
       errors = (error) ? errors + 1 : errors;
     })
+    
+    data.set('form-name', 'Contact');
 
     if(!errors) {
       return fetch("/contact/success", {
