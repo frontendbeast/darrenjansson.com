@@ -78,13 +78,17 @@
     })
 
     if(!errors) {
-      return fetch("/contact", {
+      return fetch("/contact/success", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(data).toString(),
       })
-        .then(() => {          
-          window.location.href = '/contact/success';
+        .then((response) => {
+          if (!response.ok) {
+            errorMsg.hidden = false;
+          } else {
+            window.location.href = '/contact/success';
+          }        
         })
         .catch((error) => {
           errorMsg.hidden = false;
