@@ -29,6 +29,8 @@
   import Link from '../../components/link.svelte';
   import Section from '../../components/section.svelte';
 
+	export const prerender = true;
+
   let fields = {
     name: {
       value: '',
