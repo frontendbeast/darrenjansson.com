@@ -10,7 +10,7 @@
       <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/about">About</Link></li>
       <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/skills">Skills</Link></li>
       <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/work">Work</Link></li>
-      <li class="c-nav__list-item"><Link class="c-nav__link" href="#">Contact</Link></li>
+      <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/contact">Contact</Link></li>
     </ul>
   </nav>
 </section>

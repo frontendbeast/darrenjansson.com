@@ -64,6 +64,16 @@
     }
   }
 
+  .c-section--white {
+    background-color: #fff;
+    background: linear-gradient(0deg, #eee, #fff);
+    color: var(--color-grey-dark);
+
+    &:before {
+      background-color: #fff;
+    }
+  }
+
   .c-section--top {
     padding-top: 105px;
   }
