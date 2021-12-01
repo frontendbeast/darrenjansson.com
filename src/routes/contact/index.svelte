@@ -24,12 +24,14 @@
   </form>
 </Section> 
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import { onMount } from 'svelte';
   import Link from '../../components/link.svelte';
   import Section from '../../components/section.svelte';
-
-	export const prerender = true;
 
   let fields = {
     name: {
