@@ -23,7 +23,7 @@
   let pos = 0;
 
   onMount(() => {
-    document.addEventListener('scroll', () => { pos = window.scrollY, console.log(pos) }, {passive: true});
+    document.addEventListener('scroll', () => { pos = window.scrollY }, {passive: true});
   });
 </script>
 
