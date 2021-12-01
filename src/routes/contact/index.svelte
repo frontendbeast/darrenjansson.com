@@ -4,7 +4,7 @@
 
 <Section title="Contact" top={true} color="white">
   <p>I'm not actively looking for new opportunities at the moment, but please feel free to get in touch if you would like to work with me. You can <Link href="mailto:darren@darrenjansson.com">email</Link> me or use the contact form below. </p>
-  <form class="c-contact__form" method="post" name="Contact" on:submit|preventDefault={submitContactForm} data-netlify="true" action="/contact/success">
+  <form class="c-contact__form" method="post" name="Contact" on:submit|preventDefault={submitContactForm} netlify action="/contact/success">
     <div class="c-contact__field">
       <label class="c-contact__label" for="name">Name <span class="c-contact__error" data-required="name" hidden>is required</span></label>
       <input class="c-contact__input" type="text" name="name" bind:value={fields.name.value} data-field="name" required />
