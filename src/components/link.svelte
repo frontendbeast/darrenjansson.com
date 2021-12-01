@@ -18,15 +18,19 @@
 
 <style lang="scss">
   .c-link {
-    color: var(--color-white);
+    color: inherit;
     display: inline-flex;
     overflow: hidden;
     padding: 0 0.33rem;
     position: relative;
     text-decoration: none;
 
-    &:hover .c-link__effect {
-      top: 0;
+    &:hover {
+      color: var(--color-white);
+
+      .c-link__effect {
+        top: 0;
+      }
     }
   }
 
