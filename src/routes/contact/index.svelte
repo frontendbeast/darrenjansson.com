@@ -20,7 +20,7 @@
     <p class="c-contact__error" data-error-msg hidden>
       There was an error sending your message.
     </p>
-    <button class="c-contact__submit" type="submit" style="background: linear-gradient({Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue))">Send</button>
+    <button class="c-contact__submit" type="submit" on:click|preventDefault={submitContactForm} style="background: linear-gradient({Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue))">Send</button>
   </form>
 </Section> 
 
@@ -153,13 +153,16 @@
     border: none;
     border-radius: 0;
     color: var(--color-white);
+    cursor: pointer;
     font-family: var(--font-stack);
     font-size: 1rem;
     padding: 0.455rem 0.625rem;
+    transition: box-shadow 0.5s;
 
     &:focus {
-      border-color: var(--color-blue);
+      border: none;
       border-radius: 0;
+      box-shadow: inset 0 0 0 100px var(--color-black-trans-mid);
       outline: none;
     }
   }
