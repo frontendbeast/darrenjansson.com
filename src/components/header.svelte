@@ -39,6 +39,7 @@
     height: 0;
     min-height: 105px;
     position: fixed;
+    transform: translateZ(1000px);
     transition: all 0.5s ease-in-out;
     width: 100%;
     z-index: 2;
