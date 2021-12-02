@@ -1,4 +1,4 @@
-<section class="c-section c-section--{color}{top ? ' c-section--top' : ''}">
+<section class="c-section c-section--{color}{top ? ' c-section--top' : ''}{stretch ? ' c-section--stretch' : ''}">
   <div class="c-section__inner">
     {#if title}<h1 class="c-section__title">{title}</h1>{/if}
     <slot></slot>
@@ -6,7 +6,7 @@
 </section>
 
 <script>
-  export let color, title, top = false;
+  export let color, title, top = false, stretch = false;
 </script>
 
 <style lang="scss">
@@ -55,14 +55,22 @@
     }
   }
 
-  .c-section--black {
-    background-color: #333;
-    background: linear-gradient(0deg, #222, #333);
+.c-section--black {
+  background-color: #333;
+  background: linear-gradient(0deg, #222, #333);
 
-    &:before {
-      background-color: #333;
-    }
+  &:before {
+    background-color: #333;
   }
+}
+
+.c-section--trans {
+  background-color: var(--color-black-trans);
+
+  &:before {
+    background-color: var(--color-black-trans);
+  }
+}
 
   .c-section--white {
     background-color: #fff;
@@ -76,6 +84,10 @@
 
   .c-section--top {
     padding-top: 105px;
+  }
+
+  .c-section--stretch {
+    flex-grow: 1; 
   }
 
     .c-section__title {
@@ -94,5 +106,13 @@
       overflow: auto;
       padding-left:  1rem;
       padding-right: 1rem;
+
+      .c-section--stretch & {
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        left: 0;
+        right: 0;
+      }
     }
 </style>

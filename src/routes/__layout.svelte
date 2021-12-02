@@ -1,5 +1,5 @@
 <Header />
-<main>
+<main class="c-main">
   <slot></slot>
 </main>
 <Footer />
@@ -7,6 +7,14 @@
 <script>
   import Header from '../components/header.svelte';
   import Footer from '../components/footer.svelte';
+
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const body = document.querySelector('body');
+    
+    body.classList.add('has-js');
+  });
 </script>
 
 <style lang="scss">
@@ -62,10 +70,23 @@
     font-family: var(--font-stack);
     line-height: 1.5;
     margin: 0;
+    min-height: 100vh;
     padding: 0;
   }
 
   :global(body.nav-open) {
     overflow: hidden;
+  }
+
+  :global(#svelte) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .c-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 </style>

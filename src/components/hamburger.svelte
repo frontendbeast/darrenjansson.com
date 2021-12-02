@@ -1,4 +1,5 @@
 <div class="hamburger" data-nav-btn>
+  <a class="hamburger__link" href="/menu">Menu</a>
   <div class="hamburger__icon">
     <div class="hamburger__line hamburger__line--1"></div>
     <div class="hamburger__line hamburger__line--2"></div>
@@ -105,6 +106,21 @@
         bottom: var(--translate-to);
         opacity: 0;
         transition: bottom .3s ease-in-out, opacity .0s ease-in-out .3s;
+      }
+    }
+
+    .hamburger__link {
+      background: transparent;
+      bottom: 0;
+      font-size: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+
+      :global(.has-js) & {
+        display: none;
       }
     }
 </style>
