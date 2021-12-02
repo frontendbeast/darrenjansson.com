@@ -1,19 +1,12 @@
 <a class="c-link {klass || ""}" href="{href}" bind:this={link} {...$$restProps}>
   <span class="c-link__text"><slot></slot></span>
-  <span class="c-link__effect"></span>
+  <span class="c-link__effect" style="background-image: linear-gradient({Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue));"></span>
 </a>
 
 <script>
 	let klass, link;
 	export { klass as class };
   export let href; 
-
-  import { onMount } from 'svelte';
-
-  onMount(() => {
-    link.querySelector('.c-link__effect').style.background = `linear-gradient(${Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue))`;
-  });
-
 </script>
 
 <style lang="scss">
