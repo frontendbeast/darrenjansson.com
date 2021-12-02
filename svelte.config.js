@@ -1,10 +1,15 @@
 /** @type {import('@sveltejs/kit').Config} */
 
-import adapter from '@sveltejs/adapter-netlify'
+import adapter from '@sveltejs/adapter-netlify';
+import autoprefixer from 'autoprefixer';
 import preprocess from 'svelte-preprocess';
 
 const config = {
-  preprocess: preprocess(),
+  preprocess: preprocess({
+		postcss: {
+			plugins: [autoprefixer]
+		}
+	}),
 	kit: {
 		adapter: adapter(),
 		target: '#svelte',
