@@ -18,7 +18,7 @@
   import { onMount } from 'svelte';
   import Link from '../components/link.svelte';
 
-  export let color, link, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle, title
+  export let color, link = undefined, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle = undefined, title
 
   let pos = 0;
 

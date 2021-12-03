@@ -1,4 +1,8 @@
-<section class="c-section c-section--{color}{top ? ' c-section--top' : ''}{stretch ? ' c-section--stretch' : ''}">
+<section 
+  class="c-section {color ? `c-section--${color}` : ''}" 
+  class:c-section--stretch="{stretch}"
+  class:c-section--top="{top}"
+>
   <div class="c-section__inner">
     {#if title}<h1 class="c-section__title">{title}</h1>{/if}
     <slot></slot>
@@ -6,7 +10,7 @@
 </section>
 
 <script>
-  export let color, title, top = false, stretch = false;
+  export let color = undefined, title = undefined, top = false, stretch = false;
 </script>
 
 <style lang="scss">

@@ -1,4 +1,7 @@
-<nav class="c-nav{animate ? ' has-animation' : ''}">
+<nav 
+  class="c-nav"
+  class:has-animation={animate}
+>
   <ul class="c-nav__list">
     <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/about">About</Link></li>
     <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/skills">Skills</Link></li>
@@ -14,8 +17,6 @@
   import Link from './link.svelte';
 
   export let animate = false;
-
-  console.log(animate);
 
   onMount(() => {
     const body = document.querySelector('body');

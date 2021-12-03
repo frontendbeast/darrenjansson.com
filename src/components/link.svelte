@@ -4,7 +4,7 @@
 </a>
 
 <script>
-	let klass, link;
+	let klass = undefined, link;
 	export { klass as class };
   export let href; 
 </script>
