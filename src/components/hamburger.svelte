@@ -38,7 +38,12 @@
     height: var(--size-hamburger-button);
     overflow: hidden;
     position: relative;
+    transition: opacity 0.25s;
     width: var(--size-hamburger-button);
+    
+    &:hover {
+      opacity: 0.5;
+    }
   }
     
     .hamburger__icon {
