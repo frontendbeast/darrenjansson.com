@@ -127,7 +127,7 @@
     border-radius: 0;
     box-sizing: border-box;
     padding: 0.33rem;
-    transition: border-color 0.5s;
+    transition: border-color 0.25s;
     width: 100%;
     max-width: 25em;
 
@@ -157,7 +157,7 @@
     font-family: var(--font-stack);
     font-size: 1rem;
     padding: 0.455rem 0.625rem;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.25s;
 
     &:focus {
       border: none;
