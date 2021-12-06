@@ -15,13 +15,17 @@
     </div>
     <div class="c-gallery__square">
       <picture>
-        <source srcset="/images/glass-molten-widescreen.jpg" media="(min-width: 570px)">
+        <source srcset="/images/glass-molten-widescreen.avif" media="(min-width: 570px)" type="image/avif">
+        <source srcset="/images/glass-molten-widescreen.webp" media="(min-width: 570px)" type="image/webp">
+        <source srcset="/images/glass-molten-widescreen.jpg" media="(min-width: 570px)" type="image/jpeg">
         <img class="c-gallery__img" src="/images/glass-molten.jpg" alt="Image of molten glass" />
       </picture>
     </div>
     <div class="c-gallery__portrait">
       <picture>
-        <source srcset="/images/glass-vase-widescreen.jpg" media="(min-width: 570px)">
+        <source srcset="/images/glass-vase-widescreen.avif" media="(min-width: 570px)" type="image/avif">
+        <source srcset="/images/glass-vase-widescreen.webp" media="(min-width: 570px)" type="image/webp">
+        <source srcset="/images/glass-vase-widescreen.jpg" media="(min-width: 570px)" type="image/jpeg">
         <img class="c-gallery__img" src="/images/glass-vase.jpg" alt="Image of small blue glass vase" />
       </picture>
     </div>
