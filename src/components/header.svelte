@@ -118,7 +118,7 @@
       min-width: 100px;
       max-width: 140px;
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translateY(calc(-100% - 2vh));
       transition: opacity 0.25s, transform 0.5s;
       width: 25vw;
       width: clamp(100px,25vw,140px);
