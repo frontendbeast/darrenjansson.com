@@ -17,6 +17,9 @@
   .c-section {
     background-color: var(--color-grey-dark);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding-bottom: 5vh;
     position: relative;
 
