@@ -1,4 +1,4 @@
-<a class="c-link {klass || ""}" href="{href}" bind:this={link} {...$$restProps}>
+<a class="c-link {klass || ""}" href="{href}" bind:this={link} {...$$restProps} on:click>
   <span class="c-link__text"><slot></slot></span>
   <span class="c-link__effect" style="background-image: linear-gradient({Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue));"></span>
 </a>
