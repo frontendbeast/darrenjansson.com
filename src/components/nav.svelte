@@ -3,34 +3,22 @@
   class:has-animation={animate}
 >
   <ul class="c-nav__list">
-    <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/about">About</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/skills">Skills</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/work">Work</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" data-link href="/contact">Contact</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/about">About</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/skills">Skills</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/work">Work</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/contact">Contact</Link></li>
   </ul>
 </nav>
 
 <script>
-  import { onMount } from 'svelte';
-
   import Hamburger from './hamburger.svelte';
   import Link from './link.svelte';
 
   export let animate = false;
 
-  onMount(() => {
-    const body = document.querySelector('body');
-    const links = document.querySelectorAll('[data-link]');
-
-    const onLinkClick = () => {
-      body.classList.remove('nav-open');
-    }
-
-    links.forEach(link => {
-      link.addEventListener('click', onLinkClick);
-    });
-  });
-
+  const onLinkClick = () => {
+    document.querySelector('body').classList.remove('nav-open');
+  }
 </script>
 
 <style lang="scss">

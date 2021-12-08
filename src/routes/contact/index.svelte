@@ -6,18 +6,18 @@
   <p>I'm not actively looking for new opportunities at the moment, but please feel free to get in touch if you would like to work with me. You can <Link href="mailto:darren@darrenjansson.com">email</Link> me or use the contact form below. </p>
   <form class="c-contact__form" method="post" name="Contact" on:submit|preventDefault={submitContactForm} netlify action="/contact/success">
     <div class="c-contact__field">
-      <label class="c-contact__label" for="name">Name <span class="c-contact__error" data-required="name" hidden>is required</span></label>
-      <input class="c-contact__input" type="text" name="name" bind:value={fields.name.value} data-field="name" required />
+      <label class="c-contact__label" for="name">Name <span class="c-contact__error" bind:this={fields.name.errorRequired} hidden>is required</span></label>
+      <input class="c-contact__input" type="text" name="name" bind:this={fields.name.field} bind:value={fields.name.value} required />
     </div>
     <div class="c-contact__field">
-      <label class="c-contact__label" for="email">E-mail <span class="c-contact__error" data-required="email" hidden>is required</span></label>
-      <input class="c-contact__input" type="email" name="email" bind:value={fields.email.value} data-field="email" required />
+      <label class="c-contact__label" for="email">E-mail <span class="c-contact__error" bind:this={fields.email.errorRequired} hidden>is required</span></label>
+      <input class="c-contact__input" type="email" name="email" bind:this={fields.email.field} bind:value={fields.email.value} required />
     </div>
     <div class="c-contact__field">
-      <label class="c-contact__label" for="message">Message <span class="c-contact__error" data-required="message" hidden>is required</span></label>
-      <textarea class="c-contact__input c-contact__textarea" name="message" bind:value={fields.message.value} data-field="message" required />
+      <label class="c-contact__label" for="message">Message <span class="c-contact__error" bind:this={fields.message.errorRequired} hidden>is required</span></label>
+      <textarea class="c-contact__input c-contact__textarea" name="message" bind:this={fields.message.field} bind:value={fields.message.value} required />
     </div>
-    <p class="c-contact__error" data-error-msg hidden>
+    <p class="c-contact__error" bind:this={errorMsg} hidden>
       There was an error sending your message.
     </p>
     <button class="c-contact__submit" type="submit" on:click|preventDefault={submitContactForm} style="background: linear-gradient({Math.floor(Math.random() * 359) + 1}deg, var(--color-orange), var(--color-pink), var(--color-purple), var(--color-blue))">Send</button>
@@ -29,7 +29,6 @@
 </script>
 
 <script>
-  import { onMount } from 'svelte';
   import Link from '../../components/link.svelte';
   import Section from '../../components/section.svelte';
 
@@ -97,16 +96,6 @@
         });
     }
   }
-
-  onMount(() => {
-    Object.keys(fields).forEach(field => {
-      fields[field].field = document.querySelector(`[data-field="${field}"]`);
-      fields[field].errorRequired = document.querySelector(`[data-required="${field}"]`);
-    })
-
-    errorMsg = document.querySelector(`[data-error-msg]`);
-  });
-
 </script>
 
 <style lang="scss">

@@ -10,10 +10,8 @@
 
   import { onMount } from 'svelte';
 
-  onMount(() => {
-    const body = document.querySelector('body');
-    
-    body.classList.add('has-js');
+  onMount(() => {    
+    document.querySelector('body').classList.add('has-js');
   });
 </script>
 

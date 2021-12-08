@@ -21,11 +21,9 @@
   export let color, link = undefined, logo, logoHeight, logoWidth, logoSpacingX, logoSpacingY, subtitle = undefined, title
 
   let pos = 0;
-
-  onMount(() => {
-    document.addEventListener('scroll', () => { pos = window.scrollY }, {passive: true});
-  });
 </script>
+
+<svelte:window bind:scrollY={pos} />
 
 <style lang="scss">
   :global(.c-work) {

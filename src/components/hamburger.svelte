@@ -1,4 +1,4 @@
-<div class="hamburger" data-nav-btn>
+<div class="hamburger" on:click={onHamburgerClick}>
   <a class="hamburger__link" href="/menu">Menu</a>
   <div class="hamburger__icon">
     <div class="hamburger__line hamburger__line--1"></div>
@@ -8,16 +8,9 @@
 </div>
 
 <script>
-  import { onMount } from 'svelte';
-
-  onMount(() => {
-    const body = document.querySelector('body');
-    const button = document.querySelector('[data-nav-btn]');
-    
-    button.addEventListener('click', () => {
-      body.classList.toggle('nav-open');
-    })
-  });
+  const onHamburgerClick = () => {
+    document.querySelector('body').classList.toggle('nav-open');
+  }
 </script>
 
 <style lang="scss">
