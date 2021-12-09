@@ -4,6 +4,11 @@
 </main>
 <Footer />
 
+<svelte:head>
+  <meta name="description" content="Frontend developer based in Manchester" />
+  <meta name="keywords" content="freelance, permenant, frontend, front end, front-end, developer, engineer, Manchester, remote, in-house, contractor" />
+</svelte:head>
+
 <script>
   import Header from '../components/header.svelte';
   import Footer from '../components/footer.svelte';
