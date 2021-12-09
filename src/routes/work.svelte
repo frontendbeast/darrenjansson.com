@@ -16,20 +16,20 @@
     <p>Working with the in-house team on a bespoke Node.js application, allowing the modular construction of insurance application sites by less experienced team members. Used for clients such as Sainsbury's, Swinton and Tesco. Test-driven development.</p>
   </Work>
   <Work title="Channel Mum" link="https://www.channelmum.com/" subtitle="Parenting community progressive web app" color="#f55e62" logo="/images/logo-bg-channelmum.svg" logoWidth={124} logoHeight={34.84} logoSpacingX={20} logoSpacingY={60}>
-    <p>Lead frontend developer for React application, front end process (incluinding test-driven development), architecture and development. Utilises Redux, Algolia and Contenful API.</p>
+    <p>Lead frontend developer for React application, front end process (including test-driven development), architecture and development. Utilises Redux, Algolia and Contenful API.</p>
   </Work>
-  <Work title="Go Euro (now Omio)" link="https://www.omio.co.uk/" subtitle="Parenting community progressive web app" color="#132968" logo="/images/logo-bg-goeuro.svg" logoWidth={133} logoHeight={24.7} logoSpacingX={20} logoSpacingY={60}>
-    <p>Lead frontend developer for React application, front end process (incluinding test-driven development), architecture and development. Utilises Redux, Algolia and Contenful API.</p>
+  <Work title="Go Euro (now Omio)" link="https://www.omio.co.uk/" subtitle="Travel aggregator booking site" color="#132968" logo="/images/logo-bg-goeuro.svg" logoWidth={133} logoHeight={24.7} logoSpacingX={20} logoSpacingY={60}>
+    <p>Working with the in-house team to re-factor and re-architect an Angular application to utilise component structures and a new backend API. Test-driven development. Remote and on-site in Berlin.</p>
   </Work>
   <Work title="Seesaw by Netmums" link="https://www.netmums.com/info/what-is-the-seesaw-by-netmums-app-all-about" subtitle="Activity and event listing app" color="#f7d100" logo="/images/logo-bg-seesaw.svg" logoWidth={124} logoHeight={39.4} logoSpacingX={20} logoSpacingY={60}>
     <p>Cross platform (iOS and <Link href="https://play.google.com/store/apps/details?id=com.netmums.seesawapp">Android</Link>) Ionic and Angular app development, also incorporating various map, weather and analytics APIs.</p>
   </Work>
   <Work title="Go-Ahead Group" subtitle="Multiple train booking and information sites" color="#0e78be" logo="/images/logo-bg-goahead.svg" logoWidth={133} logoHeight={21.2} logoSpacingX={20} logoSpacingY={50}>
     <p>(London Midland, <Link href="https://www.southeasternrailway.co.uk/">Southeastern</Link>, <Link href="https://www.southernrailway.com/">Southern</Link>, <Link href="https://www.greatnorthernrail.com/">Great Northern</Link>, <Link href="https://www.thameslinkrailway.com/">Thameslink</Link>, <Link href="https://www.gatwickexpress.com/">Gatwick Express</Link>)</p>
-    <p>Lead frontend developer for Sitecore project, front end process (incluinding test-driven development), architecture and development, multisite, running 6 themes from a shared codebase.</p>
+    <p>Lead frontend developer for Sitecore project, front end process (including test-driven development), architecture and development, multisite, running 6 themes from a shared codebase.</p>
   </Work>
   <Work title="Amnesty International" link="https://www.amnesty.org/" subtitle="Global human rights site" color="#ff0" logo="/images/logo-bg-amnesty.svg" logoWidth={133} logoHeight={44.7} logoSpacingX={20} logoSpacingY={64.7}>
-    <p>Lead frontend developer for Umbraco project, front end process, architecture and development, multi lingual including Arabic right to left layout.</p>
+    <p>Lead frontend developer for Umbraco project, front end process, architecture and development, multilingual including Arabic right to left layout.</p>
   </Work>
   <Work title="Bupa" link="https://www.bupa.co.uk/" subtitle="Private healthcare site" logo="/images/logo-bg-bupa.svg" color="#00aeef" logoWidth={47} logoHeight={47} logoSpacingX={20} logoSpacingY={77}>
     <p>Rapid prototyping and contributing to creation of component library for new site.</p>
