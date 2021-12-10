@@ -8,3 +8,11 @@
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
+  
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = '''
+	  max-age=63072000;
+	  includeSubDomains;
+	  preload'''
