@@ -44,10 +44,5 @@
   import Section from '../components/section.svelte';
   import Work from '../components/work.svelte';
 
-  const numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-
-  const getYears = (year) => {
-    const count = new Date().getFullYear() - year;
-    return count < 10 ? numbers[count-1] : count;
-  }
+  import { getYears } from '../components/helpers.svelte';
 </script>

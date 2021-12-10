@@ -13,8 +13,9 @@
   import { page } from '$app/stores';
 
   import Hamburger from './hamburger.svelte';
-  import Link from './link.svelte';
-  import Nav from '../components/nav.svelte';
+  import Nav from './nav.svelte';
+
+  import { closeNav } from './helpers.svelte';
 
   let body, header, links, logo, logoInView = true, logoInViewPrev;
 
@@ -23,7 +24,7 @@
       window.scrollTo(0,0);
     }
 
-    document.querySelector('body').classList.remove('nav-open');
+    closeNav();
   }
 
   const isLogoInViewport = () => {  

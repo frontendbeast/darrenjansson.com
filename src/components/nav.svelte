@@ -3,10 +3,10 @@
   class:has-animation={animate}
 >
   <ul class="c-nav__list">
-    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/about">About</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/skills">Skills</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/work">Work</Link></li>
-    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={onLinkClick} href="/contact">Contact</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={closeNav} href="/about">About</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={closeNav} href="/skills">Skills</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={closeNav} href="/work">Work</Link></li>
+    <li class="c-nav__list-item"><Link class="c-nav__link" on:click={closeNav} href="/contact">Contact</Link></li>
   </ul>
 </nav>
 
@@ -14,11 +14,9 @@
   import Hamburger from './hamburger.svelte';
   import Link from './link.svelte';
 
-  export let animate = false;
+  import { closeNav } from './helpers.svelte';
 
-  const onLinkClick = () => {
-    document.querySelector('body').classList.remove('nav-open');
-  }
+  export let animate = false;
 </script>
 
 <style lang="scss">

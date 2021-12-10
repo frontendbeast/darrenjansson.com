@@ -1,4 +1,4 @@
-<div class="hamburger" on:click={onHamburgerClick}>
+<div class="hamburger" on:click={toggleNav}>
   <a class="hamburger__link" href="/menu">Menu</a>
   <div class="hamburger__icon">
     <div class="hamburger__line hamburger__line--1"></div>
@@ -8,9 +8,7 @@
 </div>
 
 <script>
-  const onHamburgerClick = () => {
-    document.querySelector('body').classList.toggle('nav-open');
-  }
+  import { toggleNav } from './helpers.svelte';
 </script>
 
 <style lang="scss">
