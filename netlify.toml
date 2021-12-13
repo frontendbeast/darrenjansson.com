@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && cp _headers build/_headers"
   publish = "build"
  
 [dev]
@@ -8,9 +8,3 @@
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
-  
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
