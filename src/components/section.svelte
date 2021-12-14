@@ -113,6 +113,7 @@
       overflow: auto;
       padding-left:  1rem;
       padding-right: 1rem;
+      width: 100%;
 
       .c-section--stretch & {
         position: absolute;
