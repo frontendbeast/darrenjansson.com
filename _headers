@@ -1,3 +1,6 @@
 /*
+  Content-Security-Policy: default-src 'self'; frame-src https://player.vimeo.com/video/; script-src https://player.vimeo.com/api/; style-src 'unsafe-inline';
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
