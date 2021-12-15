@@ -76,6 +76,7 @@
     transform: translateZ(1000px);
     transition: all 0.5s ease-in-out;
     width: 100%;
+    will-change: backdrop-filter, height;
     z-index: 2;
 
     @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {

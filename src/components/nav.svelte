@@ -40,6 +40,7 @@
       position: relative;
       top: 0;
       transition: top 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out;
+      will-change: opacity, top;
 
       :global(.has-animation) & {
         top: -5vh;
