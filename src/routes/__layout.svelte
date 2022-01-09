@@ -7,6 +7,12 @@
 <svelte:head>
   <meta name="description" content="Frontend developer based in Manchester" />
   <meta name="keywords" content="freelance, permenant, frontend, front end, front-end, developer, engineer, Manchester, remote, in-house, contractor" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.darrenjansson.com/images/social-share.png" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.darrenjansson.com/images/social-share.png">
 </svelte:head>
 
 <script>
