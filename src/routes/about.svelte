@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>About | Darren Jansson – Frontend Engineer</title>
+	<meta property="og:title" content="About | Darren Jansson – Frontend Engineer" />
 </svelte:head>
 
 <Section title="About" top={true} color="blue">

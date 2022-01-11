@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Darren Jansson – Frontend Engineer</title>
+	<meta property="og:title" content="Darren Jansson – Frontend Engineer" />
 </svelte:head>
 
 <Masthead />

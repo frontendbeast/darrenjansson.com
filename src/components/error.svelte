@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>404 | Darren Jansson – Frontend Engineer</title>
+	<meta property="og:title" content="404 | Darren Jansson – Frontend Engineer" />
 </svelte:head>
 
 <Section color="trans" title="404" top={true}>

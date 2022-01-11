@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Menu | Darren Jansson – Frontend Engineer</title>
+	<meta property="og:title" content="Menu | Darren Jansson – Frontend Engineer" />
 </svelte:head>
 
 <Section color="trans" stretch={true}>
