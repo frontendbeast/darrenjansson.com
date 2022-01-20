@@ -22,8 +22,8 @@
   <Work title="Go Euro (now Omio)" link="https://www.omio.co.uk/" subtitle="Travel aggregator booking site" color="#132968" logo="/images/logo-bg-goeuro.svg" logoWidth={133} logoHeight={24.7} logoSpacingX={20} logoSpacingY={60}>
     <p>Working with the in-house team to re-factor and re-architect an Angular application to utilise component structures and a new backend API. Test-driven development. Remote and on-site in Berlin.</p>
   </Work>
-  <Work title="Seesaw by Netmums" link="https://www.netmums.com/info/what-is-the-seesaw-by-netmums-app-all-about" subtitle="Activity and event listing app" color="#f7d100" logo="/images/logo-bg-seesaw.svg" logoWidth={124} logoHeight={39.4} logoSpacingX={20} logoSpacingY={60}>
-    <p>Cross platform (iOS and <Link href="https://play.google.com/store/apps/details?id=com.netmums.seesawapp">Android</Link>) Ionic and Angular app development, also incorporating various map, weather and analytics APIs.</p>
+  <Work title="Seesaw by Netmums" subtitle="Activity and event listing app" color="#f7d100" logo="/images/logo-bg-seesaw.svg" logoWidth={124} logoHeight={39.4} logoSpacingX={20} logoSpacingY={60}>
+    <p>Cross platform (iOS and Android) Ionic and Angular app development, also incorporating various map, weather and analytics APIs.</p>
   </Work>
   <Work title="Go-Ahead Group" subtitle="Multiple train booking and information sites" color="#0e78be" logo="/images/logo-bg-goahead.svg" logoWidth={133} logoHeight={21.2} logoSpacingX={20} logoSpacingY={50}>
     <p>(London Midland, <Link href="https://www.southeasternrailway.co.uk/">Southeastern</Link>, <Link href="https://www.southernrailway.com/">Southern</Link>, <Link href="https://www.greatnorthernrail.com/">Great Northern</Link>, <Link href="https://www.thameslinkrailway.com/">Thameslink</Link>, <Link href="https://www.gatwickexpress.com/">Gatwick Express</Link>)</p>
