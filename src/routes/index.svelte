@@ -20,7 +20,7 @@
 
 <Section title="Recent work" color="pink">
   <Work title="Auto Trader" logo="/images/logo-bg-autotrader.svg" logoWidth={156} logoHeight={20} logoSpacingX={20} logoSpacingY={40}>
-    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader. For the past {getYears(2019)} years I&rsquo;ve been working mainly with our Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
+    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader. For the past {getYears(2020)} years I&rsquo;ve been working mainly with our Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
   </Work>
   <p><Link class="c-link--home" href="/work">More work</Link></p>
 </Section>
