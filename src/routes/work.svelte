@@ -8,7 +8,7 @@
 </Section> 
 <Section color="black">
   <Work title="Auto Trader" link="https://www.autotrader.co.uk/cars/new" color="#222b5e" logo="/images/logo-bg-autotrader.svg" logoWidth={156} logoHeight={20} logoSpacingX={20} logoSpacingY={40}>
-    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader. For the past {getYears(2019)} years I&rsquo;ve been working mainly with our Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
+    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader. For the past {getYears(2020)} years I&rsquo;ve been working mainly with our Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
   </Work>
   <Work title="Co-op Shifts" link="https://shifts.coop.co.uk/" subtitle="Staff shift management progressive web app" color="#00B1E7" logo="/images/logo-bg-coop.svg" logoWidth={47} logoHeight={50} logoSpacingX={20} logoSpacingY={70}>
     <p>Front-end developer for React application, interfacing with a Java backend. Test-driven development, extensive pair and mob programming. Mentoring and leadership of development team.</p>
