@@ -7,7 +7,7 @@
 
 <Section title="I&rsquo;m a frontend engineer based in the UK.">
     <p>With over {new Date().getFullYear() - 2004} years of commercial experience I develop responsive, performant and accessible websites using HTML, CSS and JavaScript.</p>
-    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader, working mainly on our design system.</p>
+    <p>I&rsquo;m currently a Senior Engineer at Cinch, working on our new greenfield design system.</p>
     <p><Link class="c-link--home" href="/about">More about</Link></p>
 </Section>
 
@@ -19,8 +19,8 @@
 </Section>
 
 <Section title="Recent work" color="pink">
-  <Work title="Auto Trader" logo="/images/logo-bg-autotrader.svg" logoWidth={156} logoHeight={20} logoSpacingX={20} logoSpacingY={40}>
-    <p>I&rsquo;m currently a Senior Frontend Developer at Auto Trader. For the past {getYears(2020)} years I&rsquo;ve been working mainly with our Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
+  <Work title="Cinch" logo="/images/logo-bg-cinch.svg" logoWidth={75} logoHeight={27} logoSpacingX={20} logoSpacingY={40}>
+    <p>I&rsquo;m currently a Senior Engineer at Cinch, where I've been working on our new greenfield design system, collaborating with the team on the stategic and technical planning of creating and integrating a new disgn system into an existing codebase.</p>
   </Work>
   <p><Link class="c-link--home" href="/work">More work</Link></p>
 </Section>
