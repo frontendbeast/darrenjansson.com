@@ -8,7 +8,7 @@
 </Section> 
 <Section color="black">
   <Work title="Cinch" color="#8C32BE" logo="/images/logo-bg-cinch.svg" logoWidth={75} logoHeight={27} logoSpacingX={20} logoSpacingY={40}>
-    <p>I&rsquo;m currently a Senior Engineer at Cinch. I've been working on our new greenfield design system, working with the team on the stategic and technical planning of creating and integrating a new disgn system into an existing codebase.</p>
+    <p>I&rsquo;m currently a Senior Engineer at Cinch. I've been working on our new greenfield design system, working with the team on the strategic and technical planning of creating and integrating a new design system into an existing codebase.</p>
   </Work>
   <Work title="Auto Trader" link="https://www.autotrader.co.uk/cars/new" subtitle="Vehicle retail site" color="#222b5e" logo="/images/logo-bg-autotrader.svg" logoWidth={156} logoHeight={20} logoSpacingX={20} logoSpacingY={40}>
     <p>Senior Frontend Developer, working mainly with a Storybook design system, porting exiting pages over to the new system and creating new pages for marketing campaigns.</p>
