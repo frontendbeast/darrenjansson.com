@@ -4,10 +4,9 @@
 </svelte:head>
 
 <Section title="Skills" top={true} color="orange">
-  <p>I specialise in frontend development, using CSS, HTML and JS to develop responsive, performant and accessible websites for over {new Date().getFullYear() - 2004} years. I have spent nearly a decade working as a freelancer, which has led to me being especially adaptable, quickly getting to grips with each new client's setup and codebases.</p>
-  <Lists lists={[['CSS and Sass', 'HTML', 'JS, ES5 and ES6+'], ['Node, Webpack, Gulp', 'React, Angular, Gatsby and Svelte', 'CI and TDD']]} />
+  <p>I specialise in frontend development, using CSS, HTML and JS to develop responsive, performant and accessible websites for over {new Date().getFullYear() - 2004} years. I have spent nearly a decade working as a freelancer, which has led to me being especially adaptable, quickly getting to grips with each new client's setup and codebases.</p>    <Lists lists={[['CSS, Sass and CSS-in-JS', 'HTML', 'JS, ES5, ES6+ and TypeScript'], ['Node, Webpack, Gulp', 'React, Angular, Gatsby and Svelte', 'CI and TDD']]} />
   <h2>React, GraphQL and Styled Components</h2>
-  <p>I have worked almost exclusively in React for the past few years, with data being stored in MongoDB and accessed via GraphQL. MOst of the styles have been using Sass, although I am currently involved in converting our design system over to use Styled Components.</p>  
+  <p>I have worked almost exclusively in React for the past few years, with data being stored in MongoDB and accessed via GraphQL. Most of my recent work with styles has been done using CSS-in-JS solutions. I converted a Sass implementation into Styled Components and am currently working with Vanilla Extract and CSS Modules.</p>  
   <h2>Test Driven Development</h2>
   <p>Jest and testing-library are my go to unit and integration test tools. I use Cypress for end to end tests and BackstopJS to create automated visual regression tests. Previously I have used Mocha and Chai as well as Jasmin and Karma.</p>
   <h2>Lean and agile</h2>
