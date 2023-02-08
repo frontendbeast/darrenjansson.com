@@ -72,6 +72,7 @@
     flex-direction: column;
     height: 0;
     min-height: 105px;
+    min-height: clamp(105px,15%,135px);
     position: fixed;
     transform: translateZ(1000px);
     transition: all 0.5s ease-in-out;
