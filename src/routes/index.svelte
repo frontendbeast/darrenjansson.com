@@ -13,7 +13,7 @@
 
 <Section title="Skills" color="blue">
     <p>For the past few years I have worked almost exclusively in React, with some Gatsby and Jekyll thrown in as well. I have previously worked extensively in Angular.</p>
-    <Lists lists={[['CSS, Sass and CSS-in-JS', 'HTML', 'JS, ES5, ES6+ and TypeScript'], ['Node, Webpack, Gulp', 'React, Angular, Gatsby and Svelte', 'CI and TDD']]} />
+    <Lists lists={[['React, Angular, Gatsby and Svelte', 'TypeScript, JS, ES5, ES6+', 'CI and TDD (Jest, Cypress, RTL, Percy)'], ['CSS, Sass and CSS-in-JS', 'HTML', 'Node, Webpack and Gulp']]} />
     <p>I have integrated with many different content management systems using .NET (Sitecore and Umbraco), PHP (WordPress and Craft CMS) and of course with headless, cloud based systems such as Prismic and Contentful.</p>
     <p><Link class="c-link--home" href="/skills">More skills</Link></p>
 </Section>
