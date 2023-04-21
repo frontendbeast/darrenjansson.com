@@ -4,7 +4,7 @@
 </svelte:head>
 
 <Section title="Skills" top={true} color="orange">
-  <p>I specialise in frontend development, using CSS, HTML and JS to develop responsive, performant and accessible websites for over {new Date().getFullYear() - 2004} years. I have spent nearly a decade working as a freelancer, which has led to me being especially adaptable, quickly getting to grips with each new client's setup and codebases.</p>    <Lists lists={[['CSS, Sass and CSS-in-JS', 'HTML', 'JS, ES5, ES6+ and TypeScript'], ['Node, Webpack, Gulp', 'React, Angular, Gatsby and Svelte', 'CI and TDD']]} />
+  <p>I specialise in frontend development, using CSS, HTML and JS to develop responsive, performant and accessible websites for over {new Date().getFullYear() - 2004} years. I have spent nearly a decade working as a freelancer, which has led to me being especially adaptable, quickly getting to grips with each new client's setup and codebases.</p>    <Lists lists={[['React, Angular, Gatsby and Svelte', 'TypeScript, JS, ES5, ES6+', 'CI and TDD (Jest, Cypress, RTL, Percy)'], ['CSS, Sass and CSS-in-JS', 'HTML', 'Node, Webpack and Gulp']]} />
   <h2>React, GraphQL and Styled Components</h2>
   <p>I have worked almost exclusively in React for the past few years, with data being stored in MongoDB and accessed via GraphQL. Most of my recent work with styles has been done using CSS-in-JS solutions. I converted a Sass implementation into Styled Components and am currently working with Vanilla Extract and CSS Modules.</p>  
   <h2>Test Driven Development</h2>
